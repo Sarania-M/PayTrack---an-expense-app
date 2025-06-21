@@ -25,6 +25,7 @@ ItemTile({
       child: Slidable(
         
           endActionPane: ActionPane(motion: StretchMotion(), children: [
+            SizedBox(width: 5,),
           //delete button
           SlidableAction(
             autoClose: true,
