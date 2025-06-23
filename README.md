@@ -19,6 +19,6 @@ PayTrack is a comprehensive expense tracker app for Android, designed to help yo
 - **Material Design** – Consistent and user-friendly UI components
 - **Dart** – Powerful and expressive programming language
 
-*PayTrack was developed as part of a recruitment project for the Google Developer Groups on Campus (GDGC) at my college. I hope you find it intuitive and effective for managing your finances!*
+*PayTrack was developed as part of a recruitment project for different clubs at my college. I hope you find it intuitive and effective for managing your finances!*
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/madhurjya-bijoy-sarania-78a0a9349/)
