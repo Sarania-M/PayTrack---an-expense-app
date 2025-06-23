@@ -58,7 +58,7 @@ class HomePageState extends State<HomePage> {
             controller: budgetCont,
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.currency_rupee,color: Theme.of(context).colorScheme.primaryContainer,size: 20,),
+              prefixIcon: Icon(Icons.currency_rupee,color: Theme.of(context).colorScheme.primaryContainer),
               hintText: 'TYPE',
               hintStyle: TextStyle(color: const Color.fromARGB(134, 112, 107, 107),fontFamily: 'Cera'),
               border: OutlineInputBorder(
