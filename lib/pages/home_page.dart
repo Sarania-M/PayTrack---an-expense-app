@@ -52,6 +52,7 @@ class HomePageState extends State<HomePage> {
     builder: (context) {
       
       return AlertDialog(
+        iconPadding: EdgeInsets.only(top: 10,left: 7),
         title: Text('Set your daily budget'),
         titleTextStyle: TextStyle(fontFamily: 'Cera',fontSize: 20,color: Theme.of(context).colorScheme.primaryContainer),
         content: TextField(
