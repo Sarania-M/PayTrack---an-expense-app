@@ -1,5 +1,4 @@
 import 'package:expenseapp/methods/expenses_data.dart';
-import 'package:expenseapp/pages/introduction_page.dart';
 import 'package:expenseapp/pages/main_screen.dart';
 import 'package:expenseapp/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
@@ -13,18 +12,11 @@ void main() async {
 
   await Hive.openBox('database1');
 
-  var pageBox = await Hive.openBox('settings');
-
-  bool hasSeenIntro = pageBox.get('hasSeenIntro', defaultValue: false);
-  
-
-  runApp(MyApp(showIntro: !hasSeenIntro));
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-const MyApp({super.key, required this.showIntro});
-
-final bool showIntro;
+const MyApp({super.key});
 
   @override
   Widget build(BuildContext context){
@@ -36,7 +28,7 @@ final bool showIntro;
       builder: (context, _) => MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: Provider.of<ThemeProvider>(context).themeData,
-        home: showIntro? MainScreen() : IntroductionPage(),
+        home: MainScreen(),
       ), 
     );
 }
