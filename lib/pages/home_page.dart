@@ -73,7 +73,7 @@ class HomePageState extends State<HomePage> {
             
                     ),
           actions: [
-          TextButton(
+          ElevatedButton(
             onPressed: () {
               final entered = double.tryParse(budgetCont.text);
               if(entered != null && entered > 0){

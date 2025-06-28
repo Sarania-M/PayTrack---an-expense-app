@@ -65,11 +65,11 @@ class SettingsPageState extends State<SettingsPage> {
   ],
 ),
       actions: [
-        TextButton(
+        ElevatedButton(
             child: const Text("CANCEL",style: TextStyle(fontFamily: 'Cera')),
             onPressed: () => Navigator.pop(context),
           ),
-          TextButton(
+          ElevatedButton(
             child: const Text("SAVE",style: TextStyle(fontFamily: 'Cera')),
             onPressed: () {
               final enteredBudget = double.tryParse(budgetController.text.trim());
